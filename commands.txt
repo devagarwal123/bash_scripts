@@ -2,7 +2,7 @@ nohup bash Migrate.sh > output.log 2>&1 &   --run Migrate.sh in background and p
 
 Remove trailing \r character that causes error:
 sed -i 's/\r$//' Insert_into_sim.sh
-
+ps -ef | grep Insert*
 kill -9 xxx  -- kill bash process thread with pid
 head -n 10 output.log --print first 10 lines of output.log file
 tail -n 20 output.log | cat --print last 10 lines of output.log file
