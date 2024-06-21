@@ -13,3 +13,4 @@ SELECT pg_terminate_backend(pid)  FROM pg_stat_activity  WHERE datname = 'dbname
 sed -n '800001,900000p' NR-FNN_FULL_EXTRACT_SNRM.csv > NR_FNN_10.csv --to print line number 800001 to 900000 to a new file from git bash
 select count(*), now() from schema.table;
 wc -l filename  --to print number of lines in the file
+to insert , at the end of line in all lines -> notepad++ find $ and replace with , and select reg exp mode
