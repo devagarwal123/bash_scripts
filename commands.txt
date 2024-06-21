@@ -10,3 +10,4 @@ tail -n 20 output.log | cat --print last 10 lines of output.log file
 grep -o 'Migration completed' output.log | wc -l  --prit no of times word present in log file
 select * from pg_stat_activity where datname='dbname' and state != 'idle';
 SELECT pg_terminate_backend(pid)  FROM pg_stat_activity  WHERE datname = 'dbname'  ; --kill db thread
+sed -n '800001,900000p' NR-FNN_FULL_EXTRACT_SNRM.csv > NR_FNN_10.csv --to print line number 800001 to 900000 to a new file from git bash
