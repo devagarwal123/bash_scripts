@@ -14,3 +14,5 @@ sed -n '800001,900000p' NR-FNN_FULL_EXTRACT_SNRM.csv > NR_FNN_10.csv --to print 
 select count(*), now() from schema.table;
 wc -l filename  --to print number of lines in the file
 to insert , at the end of line in all lines -> notepad++ find $ and replace with , and select reg exp mode
+sed -n '1,1000000p' file1.csv > file2.csv
+--command to split 1 million records from line 1 to 1M from file 1 and populate into file2
