@@ -17,3 +17,4 @@ to insert , at the end of line in all lines -> notepad++ find $ and replace with
 sed -n '1,1000000p' file1.csv > file2.csv
 --command to split 1 million records from line 1 to 1M from file 1 and populate into file2
 aws s3api get-object --bucket abc --key data_20072024.csv --version-id I3.kT3 data_20072024.csv --to restore deleted file and copy to current directory from s3.
+head -n -1 simas_data_1_17072024.csv > temp.csv  to remove last record from the file and print output to temp.csv
