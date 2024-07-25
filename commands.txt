@@ -23,3 +23,7 @@ find . -type f -size +100M  to find all files greater than 100MB in the director
 CREATE TABLE snrm.simas_db_imsi (LIKE simas_db.imsi INCLUDING ALL);
 ^(.*)(\r?\n\1)+$  to find duplicates in notepad regex
 SELECT grantor, grantee, table_schema, table_name, privilege_type FROM information_schema. table_privileges WHERE grantee = 'userName';
+Steps to create .pgpass file:
+touch ~/.pgpass
+chmod 600 ~/.pgpass
+edit .pgpass and enter : hostname:port:database:username:password
