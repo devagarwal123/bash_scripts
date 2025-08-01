@@ -26,4 +26,5 @@ SELECT grantor, grantee, table_schema, table_name, privilege_type FROM informati
 Steps to create .pgpass file:
 touch ~/.pgpass
 chmod 600 ~/.pgpass
+sed -i '/your_string_here/d' your_file.csv  To find a specific string within a CSV file and delete the entire line containing that string
 edit .pgpass and enter : hostname:port:database:username:password
