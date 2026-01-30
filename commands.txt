@@ -1,5 +1,7 @@
 nohup bash Migrate.sh > output.log 2>&1 &   --run Migrate.sh in background and print output in output.log file
-
+touch script1.sh  to create a file
+vi script1.sh  to edit the file
+:wq after escape to save the file
 Remove trailing \r character that causes error:
 sed -i 's/\r$//' Insert_into_sim.sh
 ps -ef | grep 'Update*'
